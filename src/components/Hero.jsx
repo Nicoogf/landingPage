@@ -4,7 +4,11 @@ import {
     RiStarFill
 } from "react-icons/ri" ;
 import figura from "../assets/figura.png" ;
-import daniOsvaldo from "../assets/daniosvald.png"
+import daniOsvaldo from "../assets/daniosvald.png";
+import nahitan from "../assets/img2.png" ;
+import alfaro from "../assets/img3.jpg" ;
+import scaloni from "../assets/img4.jpg" ;
+import gaspar from "../assets/img5.jpg" ;
 
 
 function Hero() {
@@ -48,12 +52,30 @@ function Hero() {
 
             <img src={figura} alt=""  className="w-[450px] h-auto object-cover -mt-28"/>
             <div className="">
-            <div className="bg-white shadow-xl rounded-lg p-4 flex justify-center max-w-[250px] mx-auto flex-col">
-            <img src={daniOsvaldo} alt="" className="w-10 h-10 object-contain rounded-full"/>
-            <h2 className="text-xl font-medium">120+ employees</h2>
+            <div className="relative bg-white shadow-xl rounded-lg p-4 flex justify-center max-w-[250px] mx-auto flex-col">
+
+             <div className="flex items-center">
+
+                <img src={daniOsvaldo} alt="" className="w-10 h-10 object-cover rounded-full ring-2"/>
+
+                 <img src={nahitan} alt="" className="w-10 h-10 object-cover rounded-full ring-2 -ml-4"/>
+
+                 <img src={alfaro} alt="" className="w-10 h-10 object-cover rounded-full ring-2 -ml-4"/>
+
+                 <img src={scaloni} alt="" className="w-10 h-10 object-cover rounded-full ring-2 -ml-4"/>
+
+                 <img src={gaspar} alt="" className="w-10 h-10 object-cover rounded-full ring-2 -ml-4"/>
+
+             </div>
+
+           
+
+
+            <h2 className="text-xl font-bold tracking-[.7px] text-gray-800">120+ employees</h2>
             <div className="flex items-center gap-2 text-lg text-gray-500"> 
                 <RiStarFill className="text-primary"/> 5.0 (3.1k Reviews) 
             </div>
+            <RiCheckboxBlankCircleFill className="absolute text-primary text-8xl -right-12 -bottom-12 -z-10"/>
 
             </div>
             </div>
