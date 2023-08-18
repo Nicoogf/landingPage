@@ -1,5 +1,6 @@
 import { 
     RiCheckboxBlankCircleFill, 
+    RiCheckboxBlankFill, 
     RiPlayFill,   
     RiStarFill
 } from "react-icons/ri" ;
@@ -9,7 +10,9 @@ import nahitan from "../assets/img2.png" ;
 import alfaro from "../assets/img3.jpg" ;
 import scaloni from "../assets/img4.jpg" ;
 import gaspar from "../assets/img5.jpg" ;
-
+import logo1 from "../assets/logo1.jpg";
+import logo2 from "../assets/logo2.jpg";
+import logo3 from "../assets/logo3.jpg";
 
 function Hero() {
   return (
@@ -46,13 +49,13 @@ function Hero() {
 
             {/* IMAGEN*/ }
 
-       <div className="md:col-span-3 flex items-center justify-center flex-col gap-2 relative">
+       <div className="md:col-span-3 flex items-center justify-center relative">
 
+        {/* Content Image*/}
         <div>
-
             <img src={figura} alt=""  className="w-[450px] h-auto object-cover -mt-28"/>
-            <div className="">
-            <div className="relative bg-white shadow-xl rounded-lg p-4 flex justify-center max-w-[250px] mx-auto flex-col">
+           
+            <div className="relative bg-white shadow-xl rounded-lg p-4 flex  flex-col justify-center max-w-[250px] mx-auto -mt-8">
 
              <div className="flex items-center">
 
@@ -66,27 +69,38 @@ function Hero() {
 
                  <img src={gaspar} alt="" className="w-10 h-10 object-cover rounded-full ring-2 -ml-4"/>
 
-             </div>
+             </div>         
 
-           
+            <h2 className="text-xl font-bold tracking-[.7px] text-gray-800">
+                120+ employees
+            </h2>
 
-
-            <h2 className="text-xl font-bold tracking-[.7px] text-gray-800">120+ employees</h2>
             <div className="flex items-center gap-2 text-lg text-gray-500"> 
                 <RiStarFill className="text-primary"/> 5.0 (3.1k Reviews) 
             </div>
-            <RiCheckboxBlankCircleFill className="absolute text-primary text-8xl -right-12 -bottom-12 -z-10"/>
+            <div className="absolute -right-12 -bottom-12 -z-10">
+                <div className="relative">
+                    <RiCheckboxBlankCircleFill className="text-primary text-8xl"/>
+                    <div className="absolute -left-0 -top-0 bg-white w-14 h-14"> </div>
+                </div>               
+
 
             </div>
-            </div>
-
            
 
+            </div>
         </div>
 
-       
-            
-            <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[380px] h-[380px] text-[380px] bg-secondary border-[10px] border-primary rounded-full -z-10"></div>
+        {/*Circulo */}
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[380px] h-[380px] text-[380px] bg-secondary border-[10px] border-primary rounded-full -z-10"></div>
+
+        {/* Logos */}
+        <img src={logo1} alt=""  className="w-20 h-20 object-cover rounded-full border-l-8 border-gray-600 absolute top-[10%] right-[10%] rotate-6"/>
+
+        <img src={logo2} alt=""  className="w-20 h-20 object-cover rounded-full border-l-8 border-gray-600 absolute top-[2%] left-[20%]"/>
+
+        <img src={logo3} alt=""  className="w-10 h-10 object-cover rounded-full border-l-8 border-gray-800 absolute top-[8%] left-[5%] rotate-12"/>
+
        </div>
 
 
