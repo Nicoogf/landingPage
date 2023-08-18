@@ -1,13 +1,16 @@
 import { 
     RiCheckboxBlankCircleFill, 
-    RiPlayFill   
+    RiPlayFill,   
+    RiStarFill
 } from "react-icons/ri" ;
+import figura from "../assets/figura.png" ;
+import daniOsvaldo from "../assets/daniosvald.png"
 
 
 function Hero() {
   return (
     <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8">
-       <div className=" md:col-span-5 flex items-center justify-center p-12">
+       <div className=" md:col-span-5 flex items-center justify-center p-16">
 
         <div className="flex flex-col gap-8">
             <h1 className="text-7xl font-bold leading-[7.5rem]">Web Design Impactful Digital
@@ -37,7 +40,34 @@ function Hero() {
 
        </div>
 
-       <div className="bg-red-600 md:col-span-3">Imagen</div>
+            {/* IMAGEN*/ }
+
+       <div className="md:col-span-3 flex items-center justify-center flex-col gap-2 relative">
+
+        <div>
+
+            <img src={figura} alt=""  className="w-[450px] h-auto object-cover -mt-28"/>
+            <div className="">
+            <div className="bg-white shadow-xl rounded-lg p-4 flex justify-center max-w-[250px] mx-auto flex-col">
+            <img src={daniOsvaldo} alt="" className="w-10 h-10 object-contain rounded-full"/>
+            <h2 className="text-xl font-medium">120+ employees</h2>
+            <div className="flex items-center gap-2 text-lg text-gray-500"> 
+                <RiStarFill className="text-primary"/> 5.0 (3.1k Reviews) 
+            </div>
+
+            </div>
+            </div>
+
+           
+
+        </div>
+
+       
+            
+            <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[380px] h-[380px] text-[380px] bg-secondary border-[10px] border-primary rounded-full -z-10"></div>
+       </div>
+
+
     </section>
   )
 }
