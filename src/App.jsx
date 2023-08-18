@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import Header from "./components/header";
+import Client from "./components/Client"
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <div className=''>
         <Header />
         <Hero />
+        <Client />
       </div>
      
   )

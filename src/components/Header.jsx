@@ -29,7 +29,7 @@ function Header() {
 
     <nav className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full 
     ${ showMenu ? "left-0" : "-left-full" }
-    xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-300 top-0`}>  
+    xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-300 top-0 z-50`}>  
 
         
         <a href="#" className=""> Home </a>
