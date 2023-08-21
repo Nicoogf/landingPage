@@ -4,6 +4,7 @@ import Client from "./components/Client"
 import Works from "./components/Works";
 import Reviews from "./components/Reviews";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Works />
         <Reviews />
         <Services />
+        <Footer />
       </div>
      
   )
